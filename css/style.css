@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url("../img/header-parallax.jpg");
+    background-size: cover;
+    background-color: #16161A;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.8);
+    border: none;
+}
+
+.container div {
+    margin-top: 10px;
+}
+
+.container div input[type=text] {
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #CCC;
+    height: 30px;
+    padding-left: 10px;
+}
+
+::placeholder {
+    font-size: 12px;
+}
+
+.container div label:nth-child(2) {
+    font-size: 13px;
+    text-align: justify;
+}
+
+.container div:nth-child(7) {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;    
+}
+
+.container div:nth-child(8) {
+    margin: 20px auto;
+    text-align: center;
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #7F5AF0;
+    color: #FFF;
+    transition: opacity 0.3s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.mudar_login {
+    display: none;
+}
+
+#check_cad:checked ~ #tenho_cadastro {
+    display: none;
+ }
+
+
+

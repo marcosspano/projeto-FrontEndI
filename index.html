@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--link css-->
+    <link rel="stylesheet" href="./css/style.css">
+     <!--fivicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+     <!--Googlefonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Rajdhani&display=swap" rel="stylesheet">
+
+    <title>PodCastream | Inscreva-se</title>
+</head>
+
+<body>
+    <header>  <!--topo site -->
+         <!--img logo site-->
+        <img src="" alt="imagem site">
+        <p>texto centro</p>
+         <!--navegacao home, contato, about?-->
+        <nav>
+            <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+        </nav>
+         <!--imagem banner-->
+        <img src="" alt="imagem banner">
+         <!--texto banner?-->
+        <p>texto banner</p>
+    </header>
+    <main> <!--corpo form-->
+        <div class="container">
+             <!--inicio form-->
+            <form action="">
+                <!--nome-->
+                <div>
+                    <label for="">Nome</label>
+                    <input type="text" placeholder="Nome">
+                </div>
+                 <!--email-->
+                <div>
+                    <label for="">E-Mail</label>
+                    <input type="text" placeholder="email@email.com">
+                </div>
+                 <!--senha-->
+                <div>
+                    <label for="">Senha</label>
+                    <input type="text" placeholder="Senha">
+                </div>
+                 <!--confirma senha-->
+                <div>
+                    <label for="">Confirme sua senha</label>
+                    <input type="text" placeholder="Confirme sua senha">
+                </div>
+                <!--Checkbox termos de uso e marketing-->
+                <div>
+                    <input type="checkbox" name="termos" id="termos">
+                    <label for="termos">Eu concordo com os Termos e Condições de Uso</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="marketing" id="marketing">
+                    <label for="marketing">Quero receber mensagens de marketing</label>
+                </div>
+                <!--Botoes entrar cancelar-->
+                <div>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Cancelar</button>
+                </div>
+                <!--Link redirecionamento entrar-->
+                <div>
+                    <a href="#" id="tenho_cadastro" onclick="mudar_login()">Já tenho cadastro</a>
+                </div>
+
+                <input type="checkbox" id="check_cad" hidden>
+
+            </form>
+        </div>
+    </main>
+
+    <script type="text/javascript">
+        function mudar_login() {
+            var divs = document.getElementsByTagName("div");
+
+            divs[1].classList.add('mudar_login');
+            divs[4].classList.add('mudar_login');
+            divs[5].classList.add('mudar_login');
+            divs[6].classList.add('mudar_login');
+            
+            document.getElementById('check_cad').checked = true;
+
+            document.querySelector('title').text = "PodCastream | Entrar"
+        }
+    </script>
+</body>
+</html>
