@@ -41,16 +41,17 @@
                         <li><a href="#contact">Contato</a></li>
                     </ul>
         
-                    <button type="button" id="login-button" onclick="mudar_login()">Login &raquo;</button>
+                    <button type="button" id="login-button" onclick="mudar_login()"><a href="#form_login" >Login &raquo;</a></button>
                 </div>
             
             </div>
         </nav>
     </header> <!--header parallax tulio-->
+
     <main> <!--corpo form-->
         <div class="container">
              <!--inicio form-->
-            <form action="">
+            <form action="" id="form_login">
                 <!--nome-->
                 <div>
                     <label for="">Nome</label>
@@ -100,10 +101,10 @@
         function mudar_login() {
             var divs = document.getElementsByTagName("div");
 
-            divs[1].classList.add('mudar_login');
             divs[4].classList.add('mudar_login');
-            divs[5].classList.add('mudar_login');
-            divs[6].classList.add('mudar_login');
+            divs[7].classList.add('mudar_login');
+            divs[8].classList.add('mudar_login');
+            divs[9].classList.add('mudar_login');
             
             document.getElementById('check_cad').checked = true;
 

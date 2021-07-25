@@ -79,13 +79,13 @@ button {
     padding: 5px 10px;
     border-radius: 5px;
     border: none;
-    background-color: #7F5AF0;
+    background-color: #2cb67d;
     color: #FFF;
-    transition: opacity 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
-    opacity: 0.6;
+    background-color: #7f5af0;
     cursor: pointer;
 }
 
