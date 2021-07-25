@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!--link css-->
+    <!--link css Tulio-->
     <link rel="stylesheet" href="./css/style.css">
-     <!--fivicon-->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-     <!--Googlefonts-->
+    <!--link css form-->
+    <link rel="stylesheet" href="./css/estilo.css">
+    <!--favicon-->
+    <link rel="shortcut icon" href="./img/podcastream-black.svg" type="logo">
+    <!--Googlefonts-->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Rajdhani&display=swap" rel="stylesheet">
@@ -17,21 +19,34 @@
 </head>
 
 <body>
-    <header>  <!--topo site -->
-         <!--img logo site-->
-        <img src="" alt="imagem site">
-        <p>texto centro</p>
-         <!--navegacao home, contato, about?-->
-        <nav>
-            <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-            <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-            <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+    <!--header parallax tulio-->
+    <header class="parallax">
+
+        <nav id="main-navigation">
+  
+          <div id="logo-container">
+            <a href="./index.html"><img id="logo" src="./img/podcastream-white.svg" alt="logo"/>Podcastream</a>
+          </div>
+  
+            <div id="hamburger-menu">
+    
+                <input type="checkbox" id="menu-hamburger-checkbox" />
+                <label for="menu-hamburger-checkbox">&#9776;</label>
+    
+                <div id=menu-items-container>
+                    <ul id="menu-items">
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="./pages/podcast.html">Uma Página</a></li>
+                        <li><a href="">Trabalhe Conosco</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+        
+                    <button type="button" id="login-button" onclick="mudar_login()">Login &raquo;</button>
+                </div>
+            
+            </div>
         </nav>
-         <!--imagem banner-->
-        <img src="" alt="imagem banner">
-         <!--texto banner?-->
-        <p>texto banner</p>
-    </header>
+    </header> <!--header parallax tulio-->
     <main> <!--corpo form-->
         <div class="container">
              <!--inicio form-->
@@ -49,12 +64,12 @@
                  <!--senha-->
                 <div>
                     <label for="">Senha</label>
-                    <input type="text" placeholder="Senha">
+                    <input type="password" placeholder="Senha">
                 </div>
                  <!--confirma senha-->
                 <div>
                     <label for="">Confirme sua senha</label>
-                    <input type="text" placeholder="Confirme sua senha">
+                    <input type="password" placeholder="Confirme sua senha">
                 </div>
                 <!--Checkbox termos de uso e marketing-->
                 <div>
@@ -80,7 +95,7 @@
             </form>
         </div>
     </main>
-
+    <!--Minifuncao Js selector pega tudo da tag-->
     <script type="text/javascript">
         function mudar_login() {
             var divs = document.getElementsByTagName("div");
